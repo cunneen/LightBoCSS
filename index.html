@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+    Document   : LightBoCSS
+    Created on : Oct 12, 2012, 1:13:20 PM
+    Author     : Mike Cunneen
+    Description:
+        Simple lightbox created for EggMapps app (Google Maps interface for iOS6).
+        http://www.eggmaps.com/ 
+        Do not put any other styling in here; Use a separate document.
+    License: This work is licensed under the Creative Commons Attribution-ShareAlike 
+        3.0 Unported License. To view a copy of this license, visit 
+        http://creativecommons.org/licenses/by-sa/3.0/ .
+        In addition, you MUST keep this notice intact and unmodified.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>LightBoCSS : CSS Lightbox</title>
+        <!-- the lightbox css.  Include this. -->
+        <link href="css/lightBoCSS.css" rel="stylesheet" type="text/css" />
+        <!-- CSS for this page's styling only.  Delete this. -->
+        <link href="css/deleteMe.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- Preamble. DELETE FROM HERE: ============================== -->
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand active" href="http://www.eggmaps.com/index.html">egg maps</a>
+                    <div class="nav-collapse collapse">
+                        <div class="navbar ">
+                            <ul class="nav">
+                                <li class="active"><a href="index.html">LightBoCSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preamble">
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+                    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+                </a>
+                <br />
+                <span>LightBoCSS for <a href="http://www.eggmaps.com">EggMaps</a></span> 
+                by 
+                <a href="http://www.eggmaps.com/" >Mike Cunneen</a> 
+                is licensed under a 
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+                    Creative Commons Attribution-ShareAlike 3.0 Unported License
+                </a>.
+                <br />
+                Permissions beyond the scope of this license may be available  
+                <a  href="http://www.eggmaps.com/contact.html" >here</a>.
+            </div>
+            <h1>LightBoCSS for EggMaps.</h1>
+            <p>This mobile-friendly, pure CSS Lightbox was created for EggMaps (a Google Maps app for iOS6.  Check it out: <a href="http://www.eggmaps.com/">http://www.eggmaps.com/</a> ).
+            </p>
+            <p>No JavaScript at all. Feel free to use it, according to the terms of the license.</p>
+        </div>
+        <!-- =========================== TO HERE -->
+        <!-- ===== The rest of this HTML is the lightbox itself ====== -->
+        <div class="lightbox">
+            <div class="thumbnails">
+                <a href="#b1">
+                    <img src="images/ScreenShot1thumb1.png"/>
+                </a>
+                <a href="#b2">
+                    <img src="images/ScreenShot2thumb2.png"/>
+                </a>
+                <a href="#b3">
+                    <img src="images/ScreenShot3thumb3.png"/>
+                </a>
+                <a href="#b4">
+                    <img src="images/ScreenShot4thumb4.png"/>
+                </a>
+                <a href="#b5">
+                    <img src="images/iPadScreenShot1thumb1.png"/>
+                </a>
+            </div>
+            <!-- ===== Put the big images in here ===== -->
+            <div class="lightboximg">
+                <a id="b1" href="#">
+                    <img src="images/ScreenShot1.jpg" alt="EggMaps iPad Screenshot 1" />
+                </a>
+                <a id="b2" href="#">
+                    <img src="images/ScreenShot2.jpg" alt="EggMaps iPad Screenshot 1" />
+                </a>
+                <a id="b3" href="#">
+                    <img src="images/ScreenShot3.jpg" alt="EggMaps iPad Screenshot 1" />
+                </a>
+                <a id="b4" href="#">
+                    <img src="images/ScreenShot4.jpg" alt="EggMaps iPad Screenshot 1" />
+                </a>
+                <a id="b5" href="#">
+                    <img src="images/iPadScreenShot1.jpg" alt="EggMaps iPad Screenshot 1" />
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

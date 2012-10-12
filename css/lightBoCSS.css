@@ -1,0 +1,52 @@
+/* 
+    Document   : LightBoCSS
+    Created on : Oct 12, 2012, 1:13:20 PM
+    Author     : Mike Cunneen
+    Description:
+        Simple lightbox created for EggMapps app (Google Maps interface for iOS6).
+        http://www.eggmaps.com/ 
+        Do not put any other styling in here; Use a separate document.
+    License: This work is licensed under the Creative Commons Attribution-ShareAlike 
+        3.0 Unported License. To view a copy of this license, visit 
+        http://creativecommons.org/licenses/by-sa/3.0/ .
+        In addition, you MUST keep this notice intact and unmodified.
+*/
+/* Hide each large image */
+.lightboximg  > a { /* the container for a large image */
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -999em; /* for browsers that can't set top in percentages */
+    top: -101%;
+    background-color: #222222; /* dark grey - for browsers that can't do rgba */
+    background-color: rgba(0,0,100,0.4); /* for browsers that can't set multiple backgrounds */
+    background: url(Fabric-14.png), rgba(0,0,100,0.4);
+    opacity: 0;
+    transition: top 1s ease-in-out,  opacity 1s ease-in-out, z-index 0.5s ease-in-out;
+    -webkit-transition: top 1s ease-in-out,  opacity 1s ease-in-out, z-index 0.5s ease-in-out;
+    z-index: -1;
+}
+
+
+/* display the (large image container) anchor elem when it is the target */
+.lightboximg > a:target {
+    top: 0px;
+    opacity: 1;
+    transition: top 1s ease-in-out,  opacity 1s ease-in-out, z-index 0.5s ease-in-out;
+    -webkit-transition: top 1s ease-in-out,  opacity 1s ease-in-out, z-index 0.5s ease-in-out;
+    z-index: 1001;
+}
+
+/* style for the large images */
+.lightboximg > a img {
+    /* centre the image */
+    display:block;
+    margin: 0px auto;
+    /* make it fit into the window */
+    max-width: 100%;
+}
+
+
+
+
